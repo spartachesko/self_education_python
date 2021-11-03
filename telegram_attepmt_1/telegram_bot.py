@@ -21,10 +21,10 @@ def echo(update, context):
     command = context.args[0].lower()
     if ("on" == command):
         context.user_data[echo] = True
-        update.message.reply_text("Repeater Started")
+        update.message.reply_text("Я тебя затроллю")
     elif ("off" == command):
         context.user_data[echo] = False
-        update.message.reply_text("Repeater Stopped")
+        update.message.reply_text("Ладно, гуляй бандит.")
 
 
 def start_bot():
